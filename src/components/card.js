@@ -1,12 +1,12 @@
 import React from "react";
-
-function Card() {
+import "./Sta.css";
+function Card(arg) {
   return (
-    <div style={{ width: "30vw", height: "30vh", backgroundColor: "pink" }}>
-      <h1>Iman Licins</h1>
-      <p>064 894 21 36</p>
-      <p>AvnojaBb</p>
-      <p>Sta radite?</p>
+    <div className="card">
+      <h1>{arg.ime}</h1>
+      <p>{arg.godine}</p>
+      <p>{arg.skola}</p>
+      <p>{arg.social}</p>
     </div>
   );
 }
