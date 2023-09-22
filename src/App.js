@@ -12,7 +12,6 @@ function App() {
   //   { ime: "Mehmed", godine: 22, skola: "Gimnazija", social: "NO" },
   //   { ime: "Imad", godine: 12, skola: "Gimnazija", social: "NO" },
   // // ];
-
   //  return (
   // <div className="container">
   //     {odeljenje.map((el) => {
@@ -29,41 +28,47 @@ function App() {
   //     })}
   //   </div>
   //  );
-
-  const [mojBroj, setBroj] = useState(5);
+  //   const [mojBroj, setBroj] = useState(5);
+  //   return (
+  //     <div className="container">
+  //       {mojBroj}
+  //       <button
+  //         onClick={() => {
+  //           setBroj((prev) => prev - 5);
+  //         }}
+  //       >
+  //         <h1>-5</h1>
+  //       </button>
+  //       <button
+  //         onClick={() => {
+  //           setBroj((prev) => prev - 1);
+  //         }}
+  //       >
+  //         {" "}
+  //         <h1>-1</h1>
+  //       </button>
+  //       <button
+  //         onClick={() => {
+  //           setBroj((prev) => prev + 1);
+  //         }}
+  //       >
+  //         {" "}
+  //         <h1>+1</h1>
+  //       </button>
+  //       <button
+  //         onClick={() => {
+  //           setBroj((prev) => prev + 5);
+  //         }}
+  //       >
+  //         <h1>+5</h1>
+  //       </button>
+  //     </div>
+  //   );
+  // const[inputVal, setInputVal]= useState("")
+  // const [djak, setDjak] = useState("Mehmed");
   return (
     <div className="container">
-      {mojBroj}
-      <button
-        onClick={() => {
-          setBroj((prev) => prev - 5);
-        }}
-      >
-        <h1>-5</h1>
-      </button>
-      <button
-        onClick={() => {
-          setBroj((prev) => prev - 1);
-        }}
-      >
-        {" "}
-        <h1>-1</h1>
-      </button>
-      <button
-        onClick={() => {
-          setBroj((prev) => prev + 1);
-        }}
-      >
-        {" "}
-        <h1>+1</h1>
-      </button>
-      <button
-        onClick={() => {
-          setBroj((prev) => prev + 5);
-        }}
-      >
-        <h1>+5</h1>
-      </button>
+      <Domaci />
     </div>
   );
 }
